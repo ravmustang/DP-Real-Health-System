@@ -17,7 +17,7 @@ while {true} do {
 	
 	if(_hunger < 120)then{call dpReal_Health;}else{EPOCH_playerHunger+EPOCH_playerHunger-5;};
 	if(_thirst < 60)then{call dpReal_Health;}else{EPOCH_playerThirst=EPOCH_playerThirst-2;};
-	if(_rainlevel > 0.1)then{EPOCH_playerWet=EPOCH_playerWet+5;};
+	if(_rainlevel > 0.1)then{EPOCH_playerWet=EPOCH_playerWet+0.1;};
 	if(_wet > 100)then{call dpReal_Health;};
 	if(_soiled > 20)then{call dpReal_Health;};
 	if(_tox > 50)then{call dpReal_Health;};

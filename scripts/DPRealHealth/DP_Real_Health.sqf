@@ -39,13 +39,13 @@ dpReal_Health = {
 		if(_drank < 50) then {call dpReal_Health;};
 	};
 	
-	if(_wet > 80) then
+	if(_wet > 90) then
 	{
 		_temp = EPOCH_playerTemp - 0.2;
 		systemchat("YOU ARE SOAKED! DRY UP OR YOU WILL GET SICK");
 		EPOCH_playerTemp = _temp;
 		sleep 10;		
-		if(_wet > 80) then {call dpReal_Health;};
+		if(_wet > 90) then {call dpReal_Health;};
 	};
 	
 	if(_soiled > 20) then 
