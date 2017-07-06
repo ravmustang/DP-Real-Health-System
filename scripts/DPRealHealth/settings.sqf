@@ -9,6 +9,7 @@
 DPRH_CheckTimeFrame = 60; // default: 60 seconds in between health checks
 
 DPRH_MessagingType = "systemChat"; // alternates: "titleText", "hint"
+DPRH_MessagingDelay = 30; // Length of time between displayed warning messages
 
 DPRH_HungerMsg = "YOU ARE HUNGRY! EAT OR YOU WILL DIE SOON";
 DPRH_HungerThreshold = 120; //default: 120
@@ -40,3 +41,4 @@ DPRH_ChangeIfOverHeated = [0.001, 0.002]; // changes inside array: [BloodPressur
 
 //DP Real Health Defaults - DO NOT CHANGE 
 DPRH_CurrentLoopTime = 60;
+DPRH_LastMsgTime = diag_tickTime;
